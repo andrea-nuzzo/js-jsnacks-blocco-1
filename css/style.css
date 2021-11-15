@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h2{
+    color: white;
+    font-size: 50px;
+    font-family: 'Road Rage', cursive;
+}
+
+.first{
+    background-color: rgb(98, 218, 120);
+}
+
+.second{
+    background-color: rgb(51, 60, 227);
+}
+
+.third{
+    background-color: rgb(228, 56, 105);
+}
+
+.first:hover, .second:hover, .third:hover{
+    transition: 2s;
+    transform: scale(1.2);
+    box-shadow: 4.0px 8.0px 8.0px hsl(0deg 0% 0% / 0.38);
+}
