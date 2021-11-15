@@ -10,7 +10,12 @@ jSnack1.addEventListener('click', function(){
     let sum = 0;
 
     for(let i = 0; i < 5; i++){
+        
         let numb = parseInt(prompt('Inserisci un numero'));
+        console.log(numb);
+        while(isNaN(numb)){
+            numb = parseInt(prompt('Devi inserire un numero'));
+        }
         sum += numb;
     }
     alert(`La somma dei numeri inseriti è : ${sum}`)
