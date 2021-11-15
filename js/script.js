@@ -42,6 +42,19 @@ Stampa le potenze di 2 fino a 1000. */
 const jSnack3 = document.querySelector('.third');
 
 jSnack3.addEventListener('click', function(){
-    alert('cliccato3')
+
+    let numb = parseInt(prompt('Inserisci un numero'));
+    let myArray = [];
+    let pow = 2;
+
+    while(pow < numb){
+
+        pow = pow * 2;
+
+        if( pow < numb){
+            myArray.push(pow);
+        }
+    }
+    alert(`Le potenza di due fino a ${numb} sono: [${myArray}]`)
 });
 
